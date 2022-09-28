@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$border-radius: 10px;
+$theme: #105dae;
+$complement: black;
+
+:root {
+  --theme: #105dae;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 5%;
+  font-family: Poppins;
+}
+
+.app {
+  color: $theme;
+  padding: 5%;
+  border: 2px solid $theme;
+  border-radius: $border-radius;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task {
+  height: 78px;
+  display: flex;
+  margin-block: 10px;
+  padding-inline: 5%;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: $border-radius;
+  border: 1px solid $theme;
+  color: $theme;
+  &.reminder {
+    border-left: 5px solid $theme;
+  }
+  & > * {
+    margin: 0;
+  }
+  h3 {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
+}
+
+form {
+  border: 2px solid $theme;
+  border-radius: $border-radius;
+  padding: 5%;
+  background-color: #e4f1ff;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  input {
+    height: 38px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: $border-radius;
+    border: 2px solid $theme;
+    padding-left: 2%;
+    font-family: inherit;
+    &::placeholder {
+      color: lighten($color: $theme, $amount: 20);
+    }
+  }
+  &.form-checkbox-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: initial;
+    input {
+      height: 30px;
+      width: fit-content;
+      aspect-ratio: 1;
+      margin-left: 35%;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

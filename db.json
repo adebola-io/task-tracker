@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "day": "September 28th at 1:30pm",
+      "reminder": true,
+      "text": "Learn Angular and RxJS",
+      "id": 1
+    },
+    {
+      "day": "23rd January at 5:00am",
+      "reminder": true,
+      "text": "Go to Dubai",
+      "id": 2
+    }
+  ]
+}
